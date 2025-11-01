@@ -15,7 +15,7 @@
         "title": "Kuma",
         "width": 1280,
         "height": 720,
-        "minWidth": 1280,
+        "minWidth": 800,
         "minHeight": 720,
         "resizable": true,
         "fullscreen": false
