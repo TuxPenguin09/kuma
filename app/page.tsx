@@ -8,6 +8,7 @@ import { CurrentUserProvider } from "./context/currentuser";
 
 export default function Home() {
   const [sideBarCollapsed, setSideBarCollapsed] = useState(true)
+  const [chatSendEnabled, setChatSendEnabled] = useState(true)
 
   return (
     <div className="">
@@ -15,7 +16,7 @@ export default function Home() {
         <main className="">
           <div className="flex h-[100dvh]">
             <Sidebar sideBarCollapsed={sideBarCollapsed} setSideBarCollapsed={setSideBarCollapsed} />
-            <Chatbox sideBarCollapsed={sideBarCollapsed} />
+            <Chatbox sideBarCollapsed={sideBarCollapsed} chatEnabled={chatSendEnabled} setChatEnabled={setChatSendEnabled} />
           </div>
         </main>
       </CurrentUserProvider>
